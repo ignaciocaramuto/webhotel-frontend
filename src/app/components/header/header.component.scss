@@ -4,8 +4,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    box-shadow: 0 3px 7px -2px gray
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 100;
+    background-color: white;
+    box-shadow: 0 3px 7px -2px gray;
 }
 
 .logo {
