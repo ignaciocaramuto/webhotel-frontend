@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
     box-shadow: 0 3px 7px -2px gray
 }
 
@@ -16,5 +17,7 @@
 }
 
 .button {
+    border: none;
+    background: transparent;
     margin-left: 2em;
 }
