@@ -1,5 +1,7 @@
 .servicios {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(25rem, 100%), 1fr));
+    justify-items: center;
+    gap: 2em;
     margin-top: 2em;
 }
