@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ServiciosComponent {
 
+  servicios = [1,2,3,4];
+
 }
