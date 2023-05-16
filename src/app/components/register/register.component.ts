@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { AuthenticationService } from 'src/app/authentication.service';
 
 @Component({
   selector: 'app-register',
@@ -8,14 +9,17 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class RegisterComponent {
 
-  loginForm = new FormGroup({
+  registerForm = new FormGroup({
     email: new FormControl(''),
     password: new FormControl(''),
   });
 
+  constructor(private authService: AuthenticationService) { }
+
   onSubmit() {
-    if (this.loginForm.valid) {
-      console.log(this.loginForm.value);
+    if (this.registerForm.valid) {
+      console.log(this.registerForm.value);
+      this.authService.register(this.registerForm.value);
     } else {
       // Handle form validation errors
       console.log('Invalid form');
