@@ -16,6 +16,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { RoomsComponent } from './components/rooms/rooms.component';
 import { RoomCardComponent } from './components/rooms/room-card/room-card.component';
 import { DividerComponent } from './components/divider/divider.component';
+import { BannerComponent } from './components/banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { DividerComponent } from './components/divider/divider.component';
     RegisterComponent,
     RoomsComponent,
     RoomCardComponent,
-    DividerComponent
+    DividerComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
