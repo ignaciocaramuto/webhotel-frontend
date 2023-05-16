@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RoomsService } from './rooms.service';
 
 @Component({
   selector: 'app-rooms',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./rooms.component.scss']
 })
 export class RoomsComponent {
+
+  constructor(private roomsService: RoomsService) { }
+
+  ngOnInit(): void {
+    this.roomsService.getAllRooms().subscribe(data => {
+      console.log(data);
+    });
+  }
 
 }
