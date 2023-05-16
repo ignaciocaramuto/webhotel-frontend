@@ -12,6 +12,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
 import { ServicioTarjetaComponent } from './components/servicios/servicio-tarjeta/servicio-tarjeta.component';
 import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { LoginComponent } from './components/login/login.component';
     HomeComponent,
     ServiciosComponent,
     ServicioTarjetaComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

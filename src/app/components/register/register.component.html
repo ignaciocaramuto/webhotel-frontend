@@ -1,0 +1,22 @@
+<div class="container">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="login">
+            <h2>Inicio de sesión</h2>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                    <i class="fa-solid fa-envelope"></i>
+                </span>
+                <input type="email" id="email" formControlName="email" class="form-control" placeholder="Nombre de usuario" aria-label="Useremail" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                    <i class="fa-solid fa-lock"></i>
+                </span>
+                <input type="password" id="password" formControlName="password" class="form-control" placeholder="Contraseña" aria-label="Password" aria-describedby="basic-addon1">
+            </div>
+            <button type="submit">Iniciar sesión</button>
+            <a href="/">¿Olvidaste tu contraseña?</a>
+            <p>¿No tienes cuenta? <a href="/">Regístrate</a></p>
+        </div>
+    </form>
+</div>
