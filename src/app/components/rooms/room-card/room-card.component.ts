@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Room } from '../rooms.entities';
 
 @Component({
   selector: 'app-room-card',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./room-card.component.scss']
 })
 export class RoomCardComponent {
+
+  @Input() room!: Room;
+
+  ngOnInit(): void {
+    console.log(this.room);
+  }
 
 }
