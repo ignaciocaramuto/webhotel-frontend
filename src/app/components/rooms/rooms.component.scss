@@ -1,22 +1,3 @@
-@import 'themes';
-
-.divider {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-i {
-    margin: 1em;
-    color: $primary-color;
-}
-
-hr {
-    width: 50%;
-    border-top: 2px solid;
-}
-
 h2 {
     text-align: center;
 }
