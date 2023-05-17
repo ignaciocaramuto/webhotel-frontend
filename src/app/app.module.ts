@@ -13,6 +13,10 @@ import { ServiciosComponent } from './components/servicios/servicios.component';
 import { ServicioTarjetaComponent } from './components/servicios/servicio-tarjeta/servicio-tarjeta.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { RoomsComponent } from './components/rooms/rooms.component';
+import { RoomCardComponent } from './components/rooms/room-card/room-card.component';
+import { DividerComponent } from './components/divider/divider.component';
+import { BannerComponent } from './components/banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { RegisterComponent } from './components/register/register.component';
     ServiciosComponent,
     ServicioTarjetaComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    RoomsComponent,
+    RoomCardComponent,
+    DividerComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,

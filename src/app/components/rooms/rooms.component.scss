@@ -1,0 +1,11 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(25rem, 100%), 1fr));
+    justify-items: center;
+    gap: 2em;
+}
+
+h2 {
+    margin: 1em 0em;
+    text-align: center;
+}

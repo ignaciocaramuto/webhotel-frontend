@@ -17,8 +17,7 @@ export class AuthenticationService {
   logIn(userCredentials: any): void {
     this.http.post(`${this.url}/authenticate`, userCredentials).subscribe({
       next: (user: any) => {
-        console.log(user);
-        this.userToken = user.token;
+        localStorage.setItem('token', user.token);
       },
       error: (error) => {
         console.error(error);
@@ -29,12 +28,12 @@ export class AuthenticationService {
   register(userCredentials: any): void {
     this.http.post(`${this.url}/register`, userCredentials).subscribe({
       next: (user: any) => {
-        console.log(user);
-        this.userToken = user.token;
+        localStorage.setItem('token', user.token);
       },
       error: (error) => {
         console.error(error);
       }
     });
   }
+
 }
