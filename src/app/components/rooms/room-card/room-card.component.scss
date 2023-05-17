@@ -1,5 +1,35 @@
+@import 'themes';
+
 .room-card {
     width: 400px;
-    height: 300px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 365px;
+    box-shadow: $box-shadow;
+    transition: transform .3s;
+}
+
+.room-card:hover {
+    cursor: pointer;
+    transform: scale(1.04);
+}
+
+img {
+    width: 100%;
+}
+
+.room-description {
+    padding: 0 0.5em;
+}
+
+
+h3 {
+    margin-top: 0.5em;
+    color: #54595F;
+}
+
+p {
+    color: #54595F;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
